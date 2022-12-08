@@ -14,7 +14,7 @@
 
 section {
   /* Location of the image */
-  background-image: url(https://raw.githubusercontent.com/oleg-darkdev/44hackerspace/dev/static/social/banner.png);
+  background-image: url(/banner.png);
   width: 100%;
   height: 500px;
   

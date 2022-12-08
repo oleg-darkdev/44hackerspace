@@ -4,7 +4,7 @@
 </script>
 
 <Footer class="" footerType="socialmedia">
-  <div class="md:flex md:justify-between ">
+  <div style="" class="md:flex md:justify-between ">
     <div class="mb-6 md:mb-0">
       <FooterBrand
         href="https://flowbite.com"

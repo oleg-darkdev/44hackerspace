@@ -35,4 +35,4 @@
     ]
 </script>
 
-<BoardgamesCategory {cooperativeGames}/>
+<BoardgamesCategory gamesList={cooperativeGames}/>
