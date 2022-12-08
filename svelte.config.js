@@ -10,10 +10,14 @@ const config = {
 			postcss: true
 		})
 	],
+  kit: {
+    adapter: adapter(),
 
-	kit: {
-		adapter: adapter()
-	}
+    // Override http methods in the Todo forms
+    methodOverride: {
+      allowed: ['PATCH', 'DELETE']
+    }
+  }
 };
 
 export default config;

@@ -4,7 +4,11 @@ const config = {
 		'./node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}'
 	],
 
-	theme: {
+        theme: {
+		colors: {
+			dark: '#343434',
+                        current: '#F3E600'
+		},
 		extend: {}
 	},
 
