@@ -73,30 +73,30 @@
 
 <div class="w-full max-w-2xl flex flex-wrap justify-center content-center flex-row bg-dark p-6 rounded-xl">
   <a href="">
-    <img src="social/twiiter.svg" class="w-20 h-20 rounded" alt="">
+    <img src="social/twiiter.svg" class="w-20 h-20 rounded social-hover" alt="">
   </a>
   <a href="">
-    <img src="social/facebook.svg" class="w-20 h-20 rounded" alt="">
+    <img src="social/facebook.svg" class="w-20 h-20 rounded social-hover" alt="">
 
   </a>
   <a href="">
-    <img src="social/instagram.svg" class="w-20 h-20 rounded" alt="">
+    <img src="social/instagram.svg" class="w-20 h-20 rounded social-hover" alt="">
 
   </a>
   <a href="">
-    <img src="social/github.svg" class="w-20 h-20 rounded" alt="">
+    <img src="social/github.svg" class="w-20 h-20 rounded social-hover" alt="">
 
   </a>
   <a href="">
-    <img src="social/linkedin.svg" class="w-20 h-20 rounded" alt="">
+    <img src="social/linkedin.svg" class="w-20 h-20 rounded social-hover" alt="">
 
   </a>
   <a href="">
-    <img src="social/patronite.svg" class="w-20 h-20 rounded" alt="">
+    <img src="social/patronite.svg" class="w-20 h-20 rounded social-hover" alt="">
 
   </a>
   <a href="">
-   <img src="social/telegram.svg" class="w-20 h-20 rounded" alt="">
+   <img src="social/telegram.svg" class="w-20 h-20 rounded social-hover" alt="">
 
   </a>
 </div>
