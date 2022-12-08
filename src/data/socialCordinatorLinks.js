@@ -1,7 +1,7 @@
 const links = {
 	linkedin: 'https://www.linkedin.com/in/oleg-darkdev',
 	github: 'https://github.com/oleg-darkdev/itingo',
-	twitter: '',
+	telegram: 'https://t.me/polish_cat',
 	facebook: 'https://www.facebook.com/hulio.mondre'
 };
 
