@@ -13,11 +13,12 @@ export let workshop;
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-dark dark:text-white">
             {workshop.title}
         </h5> 
-        <p class="mb-1 font-normal text-dark leading-tight">
+        
             {#each workshop.description as description}
-                {description}
+                <p style="" class="mb-1 font-normal  text-dark leading-tight">
+                    {description}
+                </p>
             {/each}
-        </p> 
 
 
             <div class="mb-2 bg-current text-gray-500 rounded-lg flex w-full flex-col p-2 sm:p-4">
@@ -49,12 +50,12 @@ export let workshop;
             </ul>
             </div>
 
-<div class="flex flex-col p-1 m-1 items-center">
+<div class="flex flex-col p-1 m-1 items-center ">
                 <h5 class="text-xl mb-4 font-bold leading-none text-dark dark:text-white">
                     Nasi partnerzy
                 </h5> 
 
-                <div class="flex flex-row">
+                <div class="flex flex-row flex-wrap pr-10 pl-10">
                     {#each workshop.partners as partner}
                         
                             <div
