@@ -1,7 +1,7 @@
 <script>
   import { Card, Button} from "flowbite-svelte";
 
-  export let heading, description, reverse, img;
+  export let heading, description, reverse, img, showFullInfo;
 </script>
 
 <div class="md:w-3/12 ">
@@ -10,8 +10,8 @@
     <p class="mb-2 font-normal text-gray-700 dark:text-gray-400 leading-tight">
       {description}
     </p>
-    <!-- <Button>
-      Read more <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 ml-2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
-    </Button> -->
+      <button type="button" on:click={() => showFullInfo = !showFullInfo} class="w-full text-center font-medium focus:ring-4 focus:outline-none inline-flex items-center justify-center px-6 py-3.5 text-base text-white bg-dark hover:bg-dark focus:ring-white rounded-lg">
+          Czytaj {showFullInfo ? 'mniej': 'więcej'}
+      </button>
   </Card>
 </div>
