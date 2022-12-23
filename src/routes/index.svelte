@@ -6,7 +6,7 @@
   import YellowSetcionWrapper from '../layout/YellowSetcionWrapper.svelte';
   import BoardgamesList from '../components/BoardgamesList.svelte';
   import socialCordinatorLinks from '../data/socialCordinatorLinks';
-  // import socialHackerspaceLinks from '../data/socialHackerspaceLinks';
+  import socialHackerspaceLinks from '../data/socialHackerspaceLinks';
   import workshopsList from '../data/workshopsList';
 </script>
 <Carousel />
@@ -25,7 +25,7 @@
   <h2 class="lg:text-7xl text-5xl text-center text-dark font-black">Lista warsztatów
   </h2>
   {#each workshopsList as workshop}
-  <WorkshopCard {workshop}/>
+    <WorkshopCard {workshop}/>
   {/each}
 </section>
 
@@ -58,6 +58,29 @@
       <h5 class="mb-2 text-2xl font-bold tracking-tight  text-white text-center">
         Mazowiecka 26, 81-862 Sopot, Poland
       </h5>
+        <div class="w-full  flex flex-wrap justify-center content-center flex-row bg-dark p-6 rounded-xl">
+          <a href={socialHackerspaceLinks.facebook.link}>
+            <img src="social/facebook.svg" class="w-20 h-20 rounded social-hover" alt="">
+
+          </a>
+          <a href={socialHackerspaceLinks.github.link}>
+            <img src="social/github.svg" class="w-20 h-20 rounded social-hover" alt="">
+
+          </a>
+          <a href={socialHackerspaceLinks.linkedin.link}>
+            <img src="social/linkedin.svg" class="w-20 h-20 rounded social-hover" alt="">
+
+          </a>
+          <a href={socialHackerspaceLinks.telegram.link}>
+          <img src="social/telegram.svg" class="w-20 h-20 rounded social-hover" alt="">
+
+          </a>
+          <a href={socialHackerspaceLinks.patronite.link}>
+            <img src="social/patronite.svg" class="w-20 h-20 rounded social-hover" alt="">
+          </a>
+
+        </div>
+
       <div  class="border border-white  flex max-w-sm flex-col m-2  dark:bg-gray-800 shadow-md text-gray-500 dark:text-gray-400 rounded-lg  dark:border-gray-700">
         <img loading="lazy" class="rounded-t-lg" src="/coordinator.png" alt=""> 
         <div class="p-1 rounded bg-lightYellow">
