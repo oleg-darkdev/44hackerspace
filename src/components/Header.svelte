@@ -17,7 +17,7 @@
     <NavLi href="#mission">Nasza misja</NavLi>
     <NavLi href="#service">Dostępne dla gości</NavLi>
     <NavLi href="#workshops">Warsztaty</NavLi>
-    <NavLi href="#boardgames">Wypożyczalnia gier planszowych</NavLi>
+    <NavLi href="/library">Wypożyczalnia gier planszowych</NavLi>
     <!-- <NavLi href="#faq">Faq</NavLi> -->
     
     <!-- <NavLi href="#community">Community</NavLi> -->

@@ -3,18 +3,24 @@
 //   import { images } from './imageData/+server.js';
   import { bounceInOut } from 'svelte/easing';
 
-
+export let bg = ''
 </script>
     
-<section class="">
+<section style="" class="{bg}">
 
 </section>
 
 <style> 
-
-section {
-  /* Location of the image */
+.main-route {
   background-image: url(/banner.png);
+}
+
+.library-route {
+  background-image: url(/banner_library.png);
+
+}
+section {
+  /* Location of the image */  
   width: 100%;
   height: 500px;
   
@@ -41,11 +47,13 @@ section {
 
 /* For mobile devices */
 @media only screen and (max-width: 767px) {
-  body {
-    /* The file size of this background image is 93% smaller
-     * to improve page load speed on mobile internet connections */
-    background-image: url(https://www.amateurphotographer.co.uk/wp-content/uploads/2020/09/Quiraing-1115-scaled.jpg);
+  .library-route  {
+    background-image: url();
   }
+  .main-route {
+    background-image: url();
+  }
+  
 }
 
 </style>

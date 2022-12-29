@@ -9,8 +9,8 @@
   import socialHackerspaceLinks from '../data/socialHackerspaceLinks';
   import workshopsList from '../data/workshopsList';
 </script>
-<Carousel />
-<section class="bio-section"> 
+<Carousel bg='main-route'/>
+<section class=""> 
   <Bio />
 </section>
 
@@ -125,9 +125,5 @@
 </section> -->
 
 <style>
-  .social-coordinator-container {
-    font-size: 2.5em;
-    height: 60px;
-    max-width: 360px;
-  }
+
 </style>

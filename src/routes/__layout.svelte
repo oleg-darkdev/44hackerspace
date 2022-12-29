@@ -14,4 +14,10 @@
 	:global(.social-hover:hover) {
 	  background-color: #F3E600;
 	}
+
+	:global(.social-coordinator-container) {
+    font-size: 2.5em;
+    height: 60px;
+    max-width: 360px;
+  }
 </style>
