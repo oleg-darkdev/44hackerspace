@@ -35,13 +35,62 @@ const workshopsList = [
 				linkTg: '',
 				img: 'https://scontent-frt3-1.xx.fbcdn.net/v/t39.30808-6/312622489_1324585104612954_3132663826861128700_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=340051&_nc_ohc=WsEjQc2LJJ8AX8IKJOI&_nc_ht=scontent-frt3-1.xx&oh=00_AfCslML0jJGwWmQHW56v1tELm8o7OkJGB8UuHyWcAWSCUQ&oe=63AB009F',
 				title: 'Turnieje szachowy #1'
+			},
+			{
+				date: '01.03.2023',
+				linkFb: '',
+				linkTg: '',
+				img: '',
+				title: 'Turnieje szachowy #2'
+			},
+			{
+				date: '05.04.2023',
+				linkFb: '',
+				linkTg: '',
+				img: '',
+				title: 'Turnieje szachowy #3'
+			},
+			{
+				date: '03.05.2023',
+				linkFb: '',
+				linkTg: '',
+				img: '',
+				title: 'Turnieje szachowy #4'
+			},
+			{
+				date: '07.06.2023',
+				linkFb: '',
+				linkTg: '',
+				img: '',
+				title: 'Turnieje szachowy #5'
+			},
+			{
+				date: '05.07.2023',
+				linkFb: '',
+				linkTg: '',
+				img: '',
+				title: 'Turnieje szachowy #6'
+			},
+			{
+				date: '09.08.2023',
+				linkFb: '',
+				linkTg: '',
+				img: '',
+				title: 'Turnieje szachowy #7'
+			},
+			{
+				date: '06.09.2023',
+				linkFb: '',
+				linkTg: '',
+				img: '',
+				title: 'Turnieje szachowy #7'
 			}
 		]
 	},
 	{
 		title: 'Naprawa rowerów w hackerspace',
 		description: [
-			'Mamy narzędzia - wystarczy, że weźmiesz swój rower. Przynieście swoje rowery i wspólnie nauczymy się ich naprawiać.',
+			'Mamy narzędzia - wystarczy, że weźmiesz swój rower. Przynieście swoje rowery i wspólnie nauczymy się ich naprawiać.'
 			// 'Zakonserwowanie roweru przed sezonem zimowym',
 			// 'Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'
 		],
