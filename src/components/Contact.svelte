@@ -48,7 +48,7 @@
 <div class="mb-6 w-full flex justify-center flex-col  bg-dark p-6 rounded-xl max-w-2xl">
 <!-- Inne hackerspacy -->
 	<h2
-		class="mb-4 text-3xl font-extrabold tracking-tight leading-none text-white md:text-3xl lg:text-3xl text-center"
+		class="text-4xl font-impact tracking-tight leading-none text-white md:text-3xl lg:text-3xl text-center"
 	>
 		Inne hackerspacy
 	</h2>

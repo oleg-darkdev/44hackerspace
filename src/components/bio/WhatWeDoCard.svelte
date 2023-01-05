@@ -6,7 +6,7 @@
 
 <div class="md:w-3/12 ">
   <Card class="m-2 " img={img} reverse={reverse}>
-    <h5 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{heading}</h5>
+    <h5 class="mb-1 text-2xl font-impact text-gray-700">{heading}</h5>
     <p class="mb-2 font-normal text-gray-700 dark:text-gray-400 leading-tight">
       {description}
     </p>

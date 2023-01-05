@@ -3,8 +3,7 @@ const workshopsList = [
 		title: 'Turnieje szachowe',
 		description: [
 			'Zapraszamy do udziału w turnieju szachów klasycznych "Żółty słoń", rozgrywany zgodnie z systemem szwajcarskim. ',
-			'Sędzia: kandydat na mistrza sportu - Oleg Miedwiediew. Mistrz Republiki Białorusi 2005-2006, wielokrotny mistrz międzynarodowych turniejów szachowych. ',
-			'Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'
+			'Sędzia: kandydat na mistrza sportu - Oleg Miedwiediew. Mistrz Republiki Białorusi 2005-2006, wielokrotny mistrz międzynarodowych turniejów szachowych. '
 		],
 		img: '/workshops/workshop_chess.png',
 		partners: [
@@ -42,9 +41,9 @@ const workshopsList = [
 	{
 		title: 'Naprawa rowerów w hackerspace',
 		description: [
-			'Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.',
-			'Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.',
-			'Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'
+			'Mamy narzędzia - wystarczy, że weźmiesz swój rower. Przynieście swoje rowery i wspólnie nauczymy się ich naprawiać.',
+			// 'Zakonserwowanie roweru przed sezonem zimowym',
+			// 'Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'
 		],
 		img: '/workshops/workshop_bicycle.png',
 		partners: [

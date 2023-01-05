@@ -71,7 +71,7 @@
 <div  class="w-12/12 mt-52 flex flex-col pb-12 pt-12 justify-center flex-wrap" style="background-color: #f3e600;" >
     <a name="service"></a> 
 
-    <h2 class="lg:text-7xl text-5xl text-center mb-2 text-dark font-black">Dostępne dla gości</h2>
+    <h2 class="lg:text-7xl text-5xl text-center mb-2 text-dark font-impact">Dostępne dla gości</h2>
     <div class="flex flex-wrap w-full flex-row place-items-center">
     {#each WhatWeDoInfo as weDo}
         <WhatWeDoCard heading={weDo.heading} description={weDo.description} img={weDo.img} reverse={weDo.reverse} href={weDo.link}/>

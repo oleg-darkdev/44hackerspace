@@ -22,7 +22,8 @@
 <section class="flex  bg-white pt-12 justify-center flex-col items-center pb-14">
   <a name="workshops">
   </a>
-  <h2 class="lg:text-7xl text-5xl text-center text-dark font-black">Lista warsztatów
+  <h2 class="lg:text-7xl text-5xl text-center text-dark font-impact">
+    Lista warsztatów
   </h2>
   {#each workshopsList as workshop}
     <WorkshopCard {workshop}/>
@@ -43,7 +44,7 @@
   <a name="contact">
   </a>
   <h2
-      class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl text-center"
+      class="mb-4 text-4xl font-impact tracking-tight leading-none text-white md:text-5xl lg:text-6xl text-center"
       >
     Skontaktuj się z nami
   </h2>
@@ -52,13 +53,13 @@
        class="mb-4 max-w-sm bg-current flex flex-col items-center shadow-md rounded-lg border border-current  text-gray-500 p-6"
        >
     <div class="m-4 lg:w-6/12 md:w-8/12 w-12/12 flex flex-wrap justify-center flex-row bg-dark p-6 rounded-3xl">
-      <h5 class="mb-2 text-2xl font-bold tracking-tight  text-white text-center">
+      <h5 class="mb-2 text-2xl font-impacttracking-tight  text-white text-center">
         44hackerspace@gmail.com
       </h5>
-      <h5 class="mb-2 text-2xl font-bold tracking-tight  text-white text-center">
+      <h5 class="mb-2 text-2xl font-impacttracking-tight  text-white text-center">
         Mazowiecka 26, 81-862 Sopot, Poland
       </h5>
-        <div class="w-full  flex flex-wrap justify-center content-center flex-row bg-dark p-6 rounded-xl">
+        <div class="w-full  flex flex-wrap justify-center content-center flex-row bg-dark mb-6 rounded-xl">
           <a href={socialHackerspaceLinks.facebook.link}>
             <img src="social/facebook.svg" class="w-20 h-20 rounded social-hover" alt="">
 
@@ -84,10 +85,10 @@
       <div  class="border border-white  flex max-w-sm flex-col m-2  dark:bg-gray-800 shadow-md text-gray-500 dark:text-gray-400 rounded-lg  dark:border-gray-700">
         <img loading="lazy" class="rounded-t-lg" src="/coordinator.png" alt=""> 
         <div class="p-1 rounded bg-lightYellow">
-          <h5 class="mb-1 text-2xl font-bold text-center tracking-tight text-white">
+          <h5 class="mb-1 text-4xl font-impact   text-center tracking-tight text-white">
             Koordynator projektu
           </h5> 
-          <p class="mb-3 text-4xl font-black text-center text-white">
+          <p class="mb-3 font-impact text-5xl text-center text-white">
             Oleg Medvedev
           </p>
           <div class="w-full max-w-2xl flex flex-wrap justify-center content-center flex-row p-6 rounded-xl">

@@ -10,7 +10,7 @@ export let workshop;
         <img class="rounded-t-lg" style="width: 760px; " src={workshop.img} alt=""> 
     <div class="p-4 sm:p-6">
         {#if workshop.showFullInfo}
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-dark dark:text-white">
+        <h5 class="mb-2 text-2xl font-impact text-dark dark:text-white">
             {workshop.title}
         </h5> 
         
@@ -23,7 +23,7 @@ export let workshop;
 
             <div class="mb-2 bg-current text-gray-500 rounded-lg flex w-full flex-col p-2 sm:p-4">
             <div class="flex justify-between items-center">
-                <h5 class="text-xl mb-4 font-bold leading-none text-dark dark:text-white">
+                <h5 class="text-xl mb-4 font-impact text-dark dark:text-white">
                     Niedawne warsztaty
                 </h5> 
                 <!-- <a href="/" class="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">View all
@@ -51,8 +51,8 @@ export let workshop;
             </div>
 
 <div class="flex flex-col p-1 m-1 items-center ">
-                <h5 class="text-xl mb-4 font-bold leading-none text-dark dark:text-white">
-                    Nasi partnerzy
+                <h5 class="text-xl mb-4 font-impact text-gray-700 text-dark dark:text-white">
+                    Partnerzy warsztatów
                 </h5> 
 
                 <div class="flex flex-row flex-wrap pr-10 pl-10">
