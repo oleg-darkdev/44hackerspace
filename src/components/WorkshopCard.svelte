@@ -31,17 +31,17 @@ export let workshop;
             </div> 
             <ul class="bg-white w-full text-gray-500 rounded-lg border border-gray-200 divide-y divide-gray-200 border-0 ">
                 {#each workshop.harmonogram as event}
-                <li class="py-2 px-4 w-full text-sm font-medium first:rounded-t-lg last:rounded-b-lg">
-                <div class="flex items-center space-x-4">
+                <li class="py-2 px-4 w-full text-gray-900  text-sm font-medium first:rounded-t-lg last:rounded-b-lg hover:text-current hover:bg-dark">
+                <div class="flex items-center space-x-4 ">
                     <!-- <img alt="Neil Sims" src="/images/profile-picture-1.webp" class="rounded-full w-10 h-10 bg-gray-100 dark:bg-gray-600 text-gray-600 dark:text-gray-300 flex-shrink-0">  -->
-                    <div class="flex-1 min-w-0">
-                    <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                    <div class="flex-1 min-w-0 ">
+                    <p class="text-sm font-medium  truncate dark:text-white">
                         {event.title}
                     </p> 
-                    <p class="text-sm text-gray-500 truncate dark:text-gray-400">Mazowiecka 26, Sopot
+                    <p class="text-sm  truncate ">Mazowiecka 26, Sopot
                     </p>
                     </div> 
-                    <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                    <div class="inline-flex items-center text-base font-semibold  ">
                         {event.date}
                     </div>
                 </div>
