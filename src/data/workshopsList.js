@@ -28,62 +28,62 @@ const workshopsList = [
 				title: 'Yellow Elephant'
 			}
 		],
-		harmonogram: [
+		schedule: [
 			{
 				date: '17.11.2022',
 				linkFb: 'https://www.facebook.com/events/3222760484644932',
 				linkTg: '',
 				img: 'https://scontent-frt3-1.xx.fbcdn.net/v/t39.30808-6/312622489_1324585104612954_3132663826861128700_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=340051&_nc_ohc=WsEjQc2LJJ8AX8IKJOI&_nc_ht=scontent-frt3-1.xx&oh=00_AfCslML0jJGwWmQHW56v1tELm8o7OkJGB8UuHyWcAWSCUQ&oe=63AB009F',
-				title: 'Turnieje szachowy #1'
+				title: 'Turnieje szachowy "Żółty słoń" #1'
 			},
 			{
 				date: '01.03.2023',
 				linkFb: '',
 				linkTg: '',
 				img: '',
-				title: 'Turnieje szachowy #2'
+				title: 'Turnieje szachowy "Żółty słoń" #2'
 			},
 			{
 				date: '05.04.2023',
 				linkFb: '',
 				linkTg: '',
 				img: '',
-				title: 'Turnieje szachowy #3'
+				title: 'Turnieje szachowy "Żółty słoń" #3'
 			},
 			{
 				date: '03.05.2023',
 				linkFb: '',
 				linkTg: '',
 				img: '',
-				title: 'Turnieje szachowy #4'
+				title: 'Turnieje szachowy "Żółty słoń" #4'
 			},
 			{
 				date: '07.06.2023',
 				linkFb: '',
 				linkTg: '',
 				img: '',
-				title: 'Turnieje szachowy #5'
+				title: 'Turnieje szachowy "Żółty słoń" #5'
 			},
 			{
 				date: '05.07.2023',
 				linkFb: '',
 				linkTg: '',
 				img: '',
-				title: 'Turnieje szachowy #6'
+				title: 'Turnieje szachowy "Żółty słoń" #6'
 			},
 			{
 				date: '09.08.2023',
 				linkFb: '',
 				linkTg: '',
 				img: '',
-				title: 'Turnieje szachowy #7'
+				title: 'Turnieje szachowy "Żółty słoń" #7'
 			},
 			{
 				date: '06.09.2023',
 				linkFb: '',
 				linkTg: '',
 				img: '',
-				title: 'Turnieje szachowy #7'
+				title: 'Turnieje szachowy "Żółty słoń" #7'
 			}
 		]
 	},
@@ -112,7 +112,7 @@ const workshopsList = [
 				title: 'ITingo'
 			}
 		],
-		harmonogram: [
+		schedule: [
 			{
 				date: '15.12.2022',
 				linkFb: 'https://www.facebook.com/events/680320676921466',
@@ -183,7 +183,7 @@ const workshopsList = [
 				title: 'ITingo'
 			}
 		],
-		harmonogram: [
+		schedule: [
 			{
 				date: '08.12.2022',
 				linkFb: 'https://www.facebook.com/events/704342584282178',
@@ -262,7 +262,7 @@ const workshopsList = [
 				title: 'ITingo'
 			}
 		],
-		harmonogram: [
+		schedule: [
 			{
 				date: '04.10.2022',
 				linkFb: 'https://www.facebook.com/events/1496854624070201',
@@ -296,7 +296,7 @@ const workshopsList = [
 				title: 'ITingo'
 			}
 		],
-		harmonogram: [
+		schedule: [
 			{
 				date: '03.11.2022',
 				linkFb: 'https://www.facebook.com/events/1073006690052531',
