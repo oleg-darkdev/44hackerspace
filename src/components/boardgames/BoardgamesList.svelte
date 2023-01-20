@@ -1,5 +1,5 @@
 <script>
-    import BoardgamesCategory from "./boardgames/BoardgamesCategory.svelte";
+    import BoardgamesCategory from "./BoardgamesCategory.svelte";
 
     const cooperativeGames = [
         {
