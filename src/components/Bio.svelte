@@ -2,6 +2,7 @@
     import WhatWeDoCard from "./bio/WhatWeDoCard.svelte";
     import PaperYellow from '../layout/PaperYellowSetcionWrapper.svelte';
     import BioCard from '../components/bio/BioCard.svelte';
+    import Impact from '../components/Impact.svelte';
 
 
     const WhatWeDoInfo = [
@@ -33,6 +34,12 @@
             img: '/about/chess.png',
             link: 'https://yellow-elephant.vercel.app/'
         },
+
+        /* 
+            добавить мастерскую ручного и электро инструмента
+            велосипедную станцию
+        */
+
     ];
 
 
@@ -54,15 +61,21 @@
                 heading: 'Otwarte warsztaty',
                 description: 'Tematyka tradycyjnie pokrywa się z szeroko pojętym IT, programowaniem, Open Source, elektroniką oraz CNC, 3D.'
             }
-        ] 
+        ];
+
+    export let tournamentsCounter, workshopsCounter, boardgamesCounter, toolsCounter;
 </script>
 
 <div class="w-12/12 -mb-52 -mt-52 flex flex-row justify-center flex-wrap ">
-<a name="mission"></a> 
+
 <PaperYellow>
+    <a name="mission"></a> 
     {#each DescriptionText as text}
         <BioCard {text}/>
     {/each}
+    
+    <a name="stats"></a> 
+    <Impact {tournamentsCounter} {workshopsCounter} {boardgamesCounter} {toolsCounter}/>
 </PaperYellow>
 </div>
 
