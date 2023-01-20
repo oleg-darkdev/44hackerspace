@@ -1,24 +1,26 @@
 <script>
   import Carousel from '../components/Carousel.svelte';
-  import WorkshopCard from '../components/WorkshopCard.svelte';
+  import WorkshopCard from '../components/workshops/WorkshopCard.svelte';
   import Contact from '../components/Contact.svelte';
   import Bio from '../components/Bio.svelte';
   import socialCordinatorLinks from '../data/socialCordinatorLinks';
   import socialHackerspaceLinks from '../data/socialHackerspaceLinks';
   import workshopsList from '../data/workshopsList';
   import ListWorkshops from '../components/workshops/ListWorkshops.svelte';
-  import AllWorkshopsList from '../components/AllWorkshopsList.svelte';
-	// import AllWorkshops from '../components/AllWorkshopsList.svelte';
+  import AllWorkshopsCard from '../components/workshops/AllWorkshopsCard.svelte';
+  import boardgamesList from '../data/boardgamesList';        
+  import toolsList from '../data/toolsList';
 
-
-
-  $: workshopsCounter=workshopsList[0].schedule.length + workshopsList[1].schedule.length + workshopsList[2].schedule.length + workshopsList[3].schedule.length;
+  let tournamentsCounter = workshopsList[0].schedule.length,
+      boardgamesCounter = boardgamesList.length,
+      toolsCounter = toolsList.length,
+      workshopsCounter=workshopsList[0].schedule.length + workshopsList[1].schedule.length + workshopsList[2].schedule.length + workshopsList[3].schedule.length;
 </script>
 
 
 <Carousel bg='main-route'/>
 <section class=""> 
-  <Bio />
+  <Bio {tournamentsCounter} {workshopsCounter} {boardgamesCounter} {toolsCounter}/>
 </section>
 
 <section class="flex  bg-white pt-12 justify-center flex-col items-center pb-14">
@@ -27,7 +29,7 @@
   <h2 class="lg:text-7xl text-5xl text-center text-dark font-impact">
     Lista warsztatów
   </h2>
-  <AllWorkshopsList {workshopsCounter}>
+  <AllWorkshopsCard {workshopsCounter}>
     {#each workshopsList as workshopData}
       <div class="mb-4 bg-current text-gray-500 rounded-lg flex w-full flex-col p-2 sm:p-4">
             <h5 class="text-xl mb-2 font-impact text-dark dark:text-white">
@@ -36,14 +38,13 @@
             <ListWorkshops workshopsHistory={workshopData.schedule} />     
       </div>
     {/each}
-  </AllWorkshopsList>
+  </AllWorkshopsCard>
 
   {#each workshopsList as workshopData}
     <WorkshopCard {workshopData}>
       <ListWorkshops workshopsHistory={workshopData.schedule} />
     </WorkshopCard>
-  {/each}
- 
+  {/each} 
 </section>
 
 <!-- <section class="tools-section mb-24 mt-24">
