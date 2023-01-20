@@ -6,17 +6,19 @@
 <div style="" class="bg-current m-4 border border-gray-200 shadow-md text-gray-500 rounded-lg flex flex-col max-w-2xl">
         <img class="rounded-t-lg" style="width: 760px; " src={workshopData.img} alt=""> 
     <div class="p-4 sm:p-6">
-        {#if workshopData.showFullInfo}
-        <h5 class="mb-2 text-2xl font-impact text-dark worhshop">
+               <h5 class="mb-2 text-2xl font-impact text-dark worhshop">
             {workshopData.title}
         </h5> 
         
             {#each workshopData.description as description}
-                <p style="" class="mb-1 font-normal  text-dark leading-tight">
+                <p style="" class="pl-2 mb-1 font-normal  text-dark leading-tight">
                     {description}
                 </p>
             {/each}
 
+
+        {#if workshopData.showFullInfo}
+ 
 
             <div class="mb-2 bg-current text-gray-500 rounded-lg flex w-full flex-col p-2 sm:p-4">
                 <div class="flex justify-between items-center">
@@ -47,7 +49,7 @@
             </div>
         {/if}
 
-        <button type="button" on:click={() => workshopData.showFullInfo = !workshopData.showFullInfo} class="w-full text-center font-medium focus:ring-4 focus:outline-none inline-flex items-center justify-center px-6 py-3.5 text-base text-white bg-dark hover:bg-dark focus:ring-white rounded-lg">
+        <button type="button" on:click={() => workshopData.showFullInfo = !workshopData.showFullInfo} class="mt-10 w-full text-center font-medium focus:ring-4 focus:outline-none inline-flex items-center justify-center px-6 py-3.5 text-base text-white bg-dark hover:bg-dark focus:ring-white rounded-lg">
             Czytaj {workshopData.showFullInfo ? 'mniej': 'więcej'}
         </button>
     </div>
