@@ -3,21 +3,23 @@
   import WorkshopCard from '../components/WorkshopCard.svelte';
   import Contact from '../components/Contact.svelte';
   import Bio from '../components/Bio.svelte';
-  import YellowSetcionWrapper from '../layout/YellowSetcionWrapper.svelte';
-  import BoardgamesList from '../components/BoardgamesList.svelte';
   import socialCordinatorLinks from '../data/socialCordinatorLinks';
   import socialHackerspaceLinks from '../data/socialHackerspaceLinks';
   import workshopsList from '../data/workshopsList';
+  import ListWorkshops from '../components/workshops/ListWorkshops.svelte';
+  import AllWorkshopsList from '../components/AllWorkshopsList.svelte';
+	// import AllWorkshops from '../components/AllWorkshopsList.svelte';
+
+
+
+  $: workshopsCounter=workshopsList[0].schedule.length + workshopsList[1].schedule.length + workshopsList[2].schedule.length + workshopsList[3].schedule.length;
 </script>
+
+
 <Carousel bg='main-route'/>
 <section class=""> 
   <Bio />
 </section>
-
-<!-- <section class="boardgames-section mb-24 mt-24" > 
-<a name="boardgames"></a> 
-<BoardgamesList />
-</section> -->
 
 <section class="flex  bg-white pt-12 justify-center flex-col items-center pb-14">
   <a name="workshops">
@@ -25,9 +27,23 @@
   <h2 class="lg:text-7xl text-5xl text-center text-dark font-impact">
     Lista warsztatów
   </h2>
-  {#each workshopsList as workshop}
-    <WorkshopCard {workshop}/>
+  <AllWorkshopsList {workshopsCounter}>
+    {#each workshopsList as workshopData}
+      <div class="mb-4 bg-current text-gray-500 rounded-lg flex w-full flex-col p-2 sm:p-4">
+            <h5 class="text-xl mb-2 font-impact text-dark dark:text-white">
+                Wcześniejsze warsztaty: {workshopData.title}
+            </h5> 
+            <ListWorkshops workshopsHistory={workshopData.schedule} />     
+      </div>
+    {/each}
+  </AllWorkshopsList>
+
+  {#each workshopsList as workshopData}
+    <WorkshopCard {workshopData}>
+      <ListWorkshops workshopsHistory={workshopData.schedule} />
+    </WorkshopCard>
   {/each}
+ 
 </section>
 
 <!-- <section class="tools-section mb-24 mt-24">
