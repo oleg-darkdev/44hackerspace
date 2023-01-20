@@ -11,7 +11,7 @@
 	"homepage": "",
 	"license": "MIT",
 	"scripts": {
-                "dev": "vite dev --host --port 3000",
+		"dev": "vite dev --host --port 3000",
 		"build": "vite build",
 		"package": "svelte-kit package",
 		"preview": "vite preview",
@@ -62,5 +62,9 @@
 	"repository": {
 		"type": "git",
 		"url": ""
+	},
+        "dependencies": {
+		"aos": "^3.0.0-beta.6",
+		"countup.js": "^2.3.2"
 	}
 }
