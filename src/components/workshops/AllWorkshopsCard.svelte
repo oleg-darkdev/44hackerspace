@@ -5,10 +5,10 @@
 </script>
 
 
-<div style="" class="p-4 sm:p-6 flex items-center bg-dark m-4 border border-gray-200 shadow-md text-gray-500 rounded-lg flex flex-col max-w-2xl">
-      <dir class="flex items-center items-start flex-row w-full">
-         <span class="max:w-8/12 pt-8 mr-2 text-3xl text-end text-current font-impact">
-          W ciągu historii naszego istnienia zorganizowaliśmy
+<div style="" class="p-4 sm:p-6 flex items-center bg-dark border border-gray-200 shadow-md text-gray-500 rounded-lg flex flex-col max-w-2xl">
+      <dir class=" flex items-center flex-row w-full">
+         <span class="max:w-7/12 pt-8 mr-2 text-end text-3xl text-current font-impact">
+          W ciągu historii naszeо aktywności istnienia zorganizowaliśmy
          </span>
          <p class=" flex flex-col items-start ">
             <span class=" text-7xl -mb-4 text-center text-white font-impact">
