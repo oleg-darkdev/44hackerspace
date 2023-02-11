@@ -24,8 +24,7 @@
 </section>
 
 <section class="flex  bg-white pt-12 justify-center flex-col items-center pb-14">
-  <a name="workshops">
-  </a>
+ 
   <h2 class="lg:text-7xl text-5xl text-center text-dark font-impact">
     Lista warsztatów
   </h2>
@@ -39,7 +38,8 @@
       </div>
     {/each}
   </AllWorkshopsCard>
-
+ <a name="workshops">
+  </a>
   {#each workshopsList as workshopData}
     <WorkshopCard {workshopData}>
       <ListWorkshops workshopsHistory={workshopData.schedule} />
