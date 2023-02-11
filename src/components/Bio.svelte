@@ -6,6 +6,14 @@
 
 
     const WhatWeDoInfo = [
+
+         {
+            heading: 'Warsztat z narzędziami ręcznymi i elektrycznymi',
+            description: 'Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.',
+            reverse: false,
+            img: '/about/boardgames.png',
+            link: '/library'
+        },
         {
             heading: 'Druk 3d',
             description: 'Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.',
@@ -14,18 +22,25 @@
             link: '/workshop#printer'
         },
         {
-            heading: 'Wypożyczalnia gier planszowych',
+            heading: 'Wycinanie i grawerowanie laserowe',
+            description: 'Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.',
+            reverse: true,
+            img: '/about/laser.png',
+            link: '/workshop#laser'
+        },
+        {
+            heading: 'Stacja naprawy rowerów',
             description: 'Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.',
             reverse: true,
             img: '/about/boardgames.png',
             link: '/library'
         },
         {
-            heading: 'Wycinanie i grawerowanie laserowe',
+            heading: 'Wypożyczalnia gier planszowych',
             description: 'Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.',
             reverse: false,
-            img: '/about/laser.png',
-            link: '/workshop#laser'
+            img: '/about/boardgames.png',
+            link: '/library'
         },
         {
             heading: 'Turnieje szachowe',
@@ -34,12 +49,6 @@
             img: '/about/chess.png',
             link: 'https://yellow-elephant.vercel.app/'
         },
-
-        /* 
-            добавить мастерскую ручного и электро инструмента
-            велосипедную станцию
-        */
-
     ];
 
 
@@ -73,7 +82,7 @@
     {#each DescriptionText as text}
         <BioCard {text}/>
     {/each}
-    
+
     <a name="stats"></a> 
     <Impact {tournamentsCounter} {workshopsCounter} {boardgamesCounter} {toolsCounter}/>
 </PaperYellow>
@@ -81,11 +90,11 @@
 
 
 
-<div  class="w-12/12 mt-52 flex flex-col pb-12 pt-12 justify-center flex-wrap" style="background-color: #f3e600;" >
+<div  class="w-12/12 mt-52 flex flex-col pb-12 pt-12 items-center flex-wrap" style="background-color: #f3e600;" >
     <a name="service"></a> 
 
     <h2 class="lg:text-7xl text-5xl text-center mb-2 text-dark font-impact">Dostępne dla gości</h2>
-    <div class="flex flex-wrap w-full flex-row place-items-center">
+    <div class="flex flex-wrap w-full flex-row justify-center">
     {#each WhatWeDoInfo as weDo}
         <WhatWeDoCard heading={weDo.heading} description={weDo.description} img={weDo.img} reverse={weDo.reverse} href={weDo.link}/>
     {/each}
