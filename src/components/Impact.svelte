@@ -56,7 +56,7 @@
 <div style="justify-content: space-around;" class="mt-6 flex flex-wrap row w-full items-center">
 	<h3 class="mb-2  text-4xl font-impact text-dark ">@44FabLab w liczbach</h3>
 	{#each impactData as impact}
-		<div class="w-full counter-card ">
+		<div class=" counter-card ">
 			<!-- <Card  class="m-1" href={impact.link} img={impact.img} horizontal reverse={impact.reverse}>
                 <h4 id={impact.id} class="mb-2 text-8xl font-bold tracking-tight text-viol dark:text-white"></h4>
                 <p style="width: 300px;" class="mb-3 text-2xl font-normal text-violDark dark:text-gray-400 leading-tight">
@@ -65,7 +65,7 @@
             </Card> -->
 			<a
 				href={impact.link}
-				class="flex max-w-sm flex-col-reverse md:flex-row-reverse md:max-w-xl bg-white dark:bg-gray-800 shadow-md text-gray-500 dark:text-gray-400 rounded-lg border border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 m-1"
+				class="flex max-w-sm flex-col-reverse md:flex-row-reverse md:max-w-xl bg-white dark:bg-gray-800 shadow-md text-gray-800  rounded-lg border border-gray-200 hover:bg-gray-100  m-1"
 			>
 				<img
 					class="rounded-b-lg object-cover w-full h-48 md:h-auto md:w-48 md:rounded-none md:rounded-r-lg"
@@ -93,11 +93,21 @@
 	div .counter-card:nth-child(2n + 1) {
 		display: flex;
 		justify-content: end;
-		padding-right: 10%;
 	}
 	div .counter-card:nth-child(2n) {
 		display: flex;
 		justify-content: start;
-		padding-left: 10%;
+	}
+
+	@media (max-width: 560px) {
+	}
+
+	@media (min-width: 560px) {
+		div .counter-card:nth-child(2n) {
+			padding-left: 10%;
+		}
+		div .counter-card:nth-child(2n + 1) {
+			padding-right: 10%;
+		}
 	}
 </style>

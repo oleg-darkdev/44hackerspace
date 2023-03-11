@@ -2,10 +2,9 @@
     export let workshopsHistory;
 </script>
 
-
-<ul class="bg-white w-full text-gray-500 rounded-lg border border-gray-200 divide-y divide-gray-200 border-0 ">
+<ul class="bg-white  p-2 py-2 px-4       text-gray-500 rounded-lg border border-gray-200 divide-y divide-gray-200 border-0 ">
     {#each workshopsHistory as worhshop}
-    <li class="py-2 px-4 w-full text-gray-900  text-sm font-medium first:rounded-t-lg last:rounded-b-lg hover:text-current  hover:bg-dark">
+    <li class="text-gray-900 p-1 text-sm font-medium first:rounded-t-lg last:rounded-b-lg hover:text-current  hover:bg-dark">
     <div class="flex items-center space-x-4 ">
         <div class="flex-1 min-w-0 ">
             <p class="text-sm font-bold  truncate dark:text-white">
