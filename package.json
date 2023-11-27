@@ -11,41 +11,40 @@
 	"homepage": "",
 	"license": "MIT",
 	"scripts": {
-		"dev": "vite dev --host --port 3000",
+		"dev": "vite dev",
 		"build": "vite build",
-		"package": "svelte-kit package",
 		"preview": "vite preview",
 		"test": "playwright test",
-		"check": "svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
-		"lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
-		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"test:unit": "vitest",
+		"lint": "prettier --plugin-search-dir . --check . && eslint .",
+		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
-		"@playwright/test": "^1.24.2",
-		"@sveltejs/adapter-auto": "1.0.0-next.64",
-		"@sveltejs/kit": "1.0.0-next.403",
-		"@typescript-eslint/eslint-plugin": "^5.32.0",
-		"@typescript-eslint/parser": "^5.32.0",
-		"autoprefixer": "10.4.8",
-		"eslint": "^8.21.0",
-		"eslint-config-prettier": "^8.5.0",
+		"@playwright/test": "^1.30.0",
+		"@sveltejs/adapter-auto": "2.0.0",
+		"@sveltejs/kit": "1.7.2",
+		"@typescript-eslint/eslint-plugin": "^5.52.0",
+		"@typescript-eslint/parser": "^5.52.0",
+		"autoprefixer": "^10.4.13",
+		"eslint": "^8.34.0",
+		"eslint-config-prettier": "^8.6.0",
 		"eslint-plugin-svelte3": "^4.0.0",
-		"flowbite": "^1.5.1",
-		"flowbite-svelte": "^0.24.0",
+		"flowbite": "^1.6.3",
+		"flowbite-svelte": "^0.29.13",
 		"flowbite-svelte-blocks": "^0.1.6",
-		"postcss": "^8.4.14",
-		"postcss-load-config": "4.0.1",
-		"prettier": "^2.7.1",
-		"prettier-plugin-svelte": "^2.7.0",
-		"svelte": "^3.49.0",
-		"svelte-check": "^2.8.0",
-		"svelte-heros": "^2.3.3",
-		"svelte-preprocess": "^4.10.7",
-		"tailwindcss": "^3.1.8",
-		"tslib": "^2.4.0",
+		"postcss": "^8.4.21",
+		"prettier": "^2.8.4",
+		"prettier-plugin-svelte": "^2.9.0",
+		"svelte": "^3.55.1",
+		"svelte-check": "^2.10.3",
+		"svelte-heros": "^2.6.0",
+		"tailwindcss": "^3.2.7",
+		"tslib": "^2.5.0",
 		"typescript": "~4.7.4",
-		"vite": "^3.0.4"
+		"vite": "^4.1.2",
+		"vitest": "^0.28.5"
 	},
 	"type": "module",
 	"keywords": [
@@ -61,10 +60,11 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": ""
+		"url": "https://github.com/shinokada/flowbite-svelte-starter.git"
 	},
-        "dependencies": {
-		"aos": "^3.0.0-beta.6",
-		"countup.js": "^2.3.2"
+	"dependencies": {
+		"aos": "^2.3.4",
+		"countup.js": "^2.8.0",
+		"svelte-preprocess": "^5.1.1"
 	}
 }

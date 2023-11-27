@@ -26,7 +26,7 @@
 	<Bio {tournamentsCounter} {workshopsCounter} {boardgamesCounter} {toolsCounter} />
 </section>
 
-<section class="flex  bg-white pt-12 justify-center flex-col items-center pb-14">
+<section class="flex bg-white pt-12 justify-center flex-col items-center pb-14">
 	<h2 class="lg:text-7xl text-5xl text-center text-dark font-impact">Lista warsztatów</h2>
 	<AllWorkshopsCard {workshopsCounter}>
 		{#each workshopsList as workshopData}
@@ -57,7 +57,7 @@
 </section> -->
 
 <section
-	class="bg-dark md:p-12 lg:p-12 xl:p-12 pt-10 h-auto lg:w-12/12 sm:w-12/12  flex flex-col justify-center content-center "
+	class="bg-dark md:p-12 lg:p-12 xl:p-12 pt-10 h-auto lg:w-12/12 w-full flex flex-col justify-center content-center"
 >
 	<a name="contact" />
 	<h2
@@ -67,19 +67,19 @@
 	</h2>
 	<div
 		style=""
-		class="mb-4 max-w-sm bg-current flex flex-col items-center shadow-md rounded-lg border border-current  text-gray-500  p-2 lg:p-6 md:p-6 xl:p-6"
+		class="mb-4 max-w-4xl mx-auto bg-current flex flex-col items-center shadow-md rounded-lg border border-current text-gray-500 p-2 lg:p-6 md:p-6 xl:p-6"
 	>
 		<div
 			class="w-full mb-4 mt-4 lg:w-6/12 md:w-8/12 w-12/12 flex flex-wrap justify-center flex-row bg-dark lg:p-6 md:p-6 xl:p-6 rounded-3xl"
 		>
-			<h5 class="mb-2 text-2xl font-impacttracking-tight  text-white text-center">
+			<h5 class="mb-2 text-2xl font-impacttracking-tight text-white text-center">
 				44hackerspace@gmail.com
 			</h5>
-			<h5 class="mb-2 text-2xl font-impacttracking-tight  text-white text-center">
+			<h5 class="mb-2 text-2xl font-impacttracking-tight text-white text-center">
 				Mazowiecka 26, 81-862 Sopot, Poland
 			</h5>
 			<div
-				class="w-full  flex flex-wrap justify-center content-center flex-row bg-dark mb-6 rounded-xl"
+				class="w-full flex flex-wrap justify-center content-center flex-row bg-dark mb-6 rounded-xl"
 			>
 				<a href={socialHackerspaceLinks.facebook.link}>
 					<img src="social/facebook.svg" class="w-20 h-20 rounded social-hover" alt="" />
@@ -99,11 +99,11 @@
 			</div>
 
 			<div
-				class="border border-white  flex max-w-sm flex-col m-2  dark:bg-gray-800 shadow-md text-gray-500 dark:text-gray-400 rounded-lg  dark:border-gray-700"
+				class="border border-white flex max-w-sm flex-col m-2 dark:bg-gray-800 shadow-md text-gray-500 dark:text-gray-400 rounded-lg dark:border-gray-700"
 			>
 				<img loading="lazy" class="rounded-t-lg" src="/coordinator.png" alt="" />
 				<div class="p-1 rounded bg-lightYellow">
-					<h5 class="mb-1 text-4xl font-impact   text-center tracking-tight text-white">
+					<h5 class="mb-1 text-4xl font-impact text-center tracking-tight text-white">
 						Koordynator projektu
 					</h5>
 					<p class="mb-3 font-impact text-5xl text-center text-white">Oleg Medvedev</p>
@@ -127,8 +127,13 @@
 			</div>
 		</div>
 		<Contact />
-		<iframe
-			class="m-2 bg-white shadow-md rounded-lg border border-gray-200 text-gray-500 p-2"
+		
+	</div>
+</section>
+
+<section class='px-2'>
+	<iframe
+			class="w-full mb-10 bg-white shadow-md rounded-lg border border-gray-200 text-gray-500 p-2"
 			width="100%"
 			height="600px"
 			frameborder="0"
@@ -137,9 +142,8 @@
 			marginwidth="0"
 			src="https://www.openstreetmap.org/export/embed.html?bbox=18.547909855842594%2C54.46001700833452%2C18.550592064857486%2C54.46113953783808&amp;layer=mapnik&amp;marker=54.46057827693473%2C18.549250960350037"
 		/>
-	</div>
+		
 </section>
-
 <!-- <section class="community-section mb-24 mt-24">
 <a name="community"></a>
 </section> -->
